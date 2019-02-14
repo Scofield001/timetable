@@ -1,0 +1,8 @@
+$borderCol: #000;
+
+.table {
+  &__col {
+    border-bottom: 1px solid $borderCol;
+    padding: 20px 0;
+  }
+}

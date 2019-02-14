@@ -1,0 +1,29 @@
+$focusShadow: #ffac02;
+$inputHover: #ffbe38;
+
+.table {
+  &__input {
+    padding-left: 1vw;
+    outline: none;
+    box-sizing: border-box;
+    line-height: 30px;
+    font-size: 1.125rem;
+    width: 100%;
+    border: none;
+    box-shadow: 0 4px 0 0 #000;
+    transition: box-shadow .2s ease;
+    &:hover {
+      &::placeholder {
+        transition: color .2s ease;
+        color: $inputHover;
+      }
+    }
+    &:focus {
+      box-shadow:
+              0 1px $focusShadow,
+              0 2px $focusShadow,
+              0 3px $focusShadow,
+              0 4px $focusShadow;
+    }
+  }
+}

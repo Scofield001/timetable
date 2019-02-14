@@ -1,0 +1,28 @@
+$rowShadow: #ffac02;
+$colText: #ffac02;
+
+.table {
+  &__row {
+    transition: box-shadow .3s, transform .3s;
+
+    .table__col:nth-child(3) {
+      font-size: 2rem;
+    }
+    &:hover{
+      box-shadow:
+              1px 1px $rowShadow,
+              2px 2px $rowShadow,
+              3px 3px $rowShadow,
+              4px 4px $rowShadow,
+              5px 5px $rowShadow,
+              6px 6px $rowShadow,
+              7px 7px $rowShadow;
+      transform: translateX(-7px);
+
+      .table__col:nth-child(3) {
+        transition:  color .3s;
+        color: $colText;
+      }
+    }
+  }
+}
