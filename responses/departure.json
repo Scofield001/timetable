@@ -1,0 +1,352 @@
+{
+  "pagination": {
+    "total": 630,
+    "limit": 10,
+    "offset": 0
+  },
+  "schedule": [
+    {
+      "except_days": null,
+      "arrival": null,
+      "thread": {
+        "uid": "SU-1334_4_c26_547",
+        "title": "Москва — Архангельск",
+        "number": "SU 1334",
+        "short_title": "Москва — Архангельск",
+        "carrier": {
+          "code": 26,
+          "codes": {
+            "icao": "AFL",
+            "sirena": "СУ",
+            "iata": "SU"
+          },
+          "title": "Аэрофлот"
+        },
+        "transport_type": "plane",
+        "vehicle": "Сухой Суперджет 100",
+        "transport_subtype": {
+          "color": null,
+          "code": null,
+          "title": null
+        },
+        "express_type": null
+      },
+      "is_fuzzy": true,
+      "days": "ежедневно по 31.03",
+      "stops": "",
+      "departure": "2019-02-14T00:05:00+03:00",
+      "terminal": null,
+      "platform": ""
+    },
+    {
+      "except_days": null,
+      "arrival": null,
+      "thread": {
+        "uid": "N4-563_0_c2543_547",
+        "title": "Москва — Орск",
+        "number": "N4 563",
+        "short_title": "Москва — Орск",
+        "carrier": {
+          "code": 2543,
+          "codes": {
+            "icao": "NWS",
+            "sirena": "КЛ",
+            "iata": "N4"
+          },
+          "title": "Северный ветер (Nordwind)"
+        },
+        "transport_type": "plane",
+        "vehicle": "Embraer 190",
+        "transport_subtype": {
+          "color": null,
+          "code": null,
+          "title": null
+        },
+        "express_type": null
+      },
+      "is_fuzzy": false,
+      "days": "ежедневно по 31.03",
+      "stops": "",
+      "departure": "2019-02-14T00:05:00+03:00",
+      "terminal": null,
+      "platform": ""
+    },
+    {
+      "except_days": null,
+      "arrival": null,
+      "thread": {
+        "uid": "EO-563_0_c196_12",
+        "title": "Москва — Орск",
+        "number": "EO 563",
+        "short_title": "Москва — Орск",
+        "carrier": {
+          "code": 196,
+          "codes": {
+            "icao": "KAR",
+            "sirena": null,
+            "iata": "EO"
+          },
+          "title": "Pegas Fly"
+        },
+        "transport_type": "plane",
+        "vehicle": "Embraer 190",
+        "transport_subtype": {
+          "color": null,
+          "code": null,
+          "title": null
+        },
+        "express_type": null
+      },
+      "is_fuzzy": false,
+      "days": "ежедневно по 31.03",
+      "stops": "",
+      "departure": "2019-02-14T00:05:00+03:00",
+      "terminal": "D",
+      "platform": ""
+    },
+    {
+      "except_days": null,
+      "arrival": null,
+      "thread": {
+        "uid": "SU-1372_2_c26_547",
+        "title": "Москва — Белгород",
+        "number": "SU 1372",
+        "short_title": "Москва — Белгород",
+        "carrier": {
+          "code": 26,
+          "codes": {
+            "icao": "AFL",
+            "sirena": "СУ",
+            "iata": "SU"
+          },
+          "title": "Аэрофлот"
+        },
+        "transport_type": "plane",
+        "vehicle": "Сухой Суперджет 100",
+        "transport_subtype": {
+          "color": null,
+          "code": null,
+          "title": null
+        },
+        "express_type": null
+      },
+      "is_fuzzy": true,
+      "days": "ежедневно по 31.03",
+      "stops": "",
+      "departure": "2019-02-14T00:10:00+03:00",
+      "terminal": null,
+      "platform": ""
+    },
+    {
+      "except_days": null,
+      "arrival": null,
+      "thread": {
+        "uid": "SU-1206_2_c26_547",
+        "title": "Москва — Самара",
+        "number": "SU 1206",
+        "short_title": "Москва — Самара",
+        "carrier": {
+          "code": 26,
+          "codes": {
+            "icao": "AFL",
+            "sirena": "СУ",
+            "iata": "SU"
+          },
+          "title": "Аэрофлот"
+        },
+        "transport_type": "plane",
+        "vehicle": "Boeing 737-800",
+        "transport_subtype": {
+          "color": null,
+          "code": null,
+          "title": null
+        },
+        "express_type": null
+      },
+      "is_fuzzy": false,
+      "days": "ежедневно по 31.03, кроме 11.02",
+      "stops": "",
+      "departure": "2019-02-14T00:15:00+03:00",
+      "terminal": null,
+      "platform": ""
+    },
+    {
+      "except_days": null,
+      "arrival": null,
+      "thread": {
+        "uid": "SU-1948_0_c26_547",
+        "title": "Москва — Актобе",
+        "number": "SU 1948",
+        "short_title": "Москва — Актобе",
+        "carrier": {
+          "code": 26,
+          "codes": {
+            "icao": "AFL",
+            "sirena": "СУ",
+            "iata": "SU"
+          },
+          "title": "Аэрофлот"
+        },
+        "transport_type": "plane",
+        "vehicle": "Boeing 737-800",
+        "transport_subtype": {
+          "color": null,
+          "code": null,
+          "title": null
+        },
+        "express_type": null
+      },
+      "is_fuzzy": true,
+      "days": "чт, сб, вс по 24.02",
+      "stops": "",
+      "departure": "2019-02-14T00:15:00+03:00",
+      "terminal": null,
+      "platform": ""
+    },
+    {
+      "except_days": null,
+      "arrival": null,
+      "thread": {
+        "uid": "SU-1112_0_c26_547",
+        "title": "Москва — Краснодар",
+        "number": "SU 1112",
+        "short_title": "Москва — Краснодар",
+        "carrier": {
+          "code": 26,
+          "codes": {
+            "icao": "AFL",
+            "sirena": "СУ",
+            "iata": "SU"
+          },
+          "title": "Аэрофлот"
+        },
+        "transport_type": "plane",
+        "vehicle": "Airbus A320",
+        "transport_subtype": {
+          "color": null,
+          "code": null,
+          "title": null
+        },
+        "express_type": null
+      },
+      "is_fuzzy": true,
+      "days": "ежедневно по 31.03",
+      "stops": "",
+      "departure": "2019-02-14T00:25:00+03:00",
+      "terminal": null,
+      "platform": ""
+    },
+    {
+      "except_days": null,
+      "arrival": null,
+      "thread": {
+        "uid": "SU-1424_0_c26_547",
+        "title": "Москва — Челябинск",
+        "number": "SU 1424",
+        "short_title": "Москва — Челябинск",
+        "carrier": {
+          "code": 26,
+          "codes": {
+            "icao": "AFL",
+            "sirena": "СУ",
+            "iata": "SU"
+          },
+          "title": "Аэрофлот"
+        },
+        "transport_type": "plane",
+        "vehicle": "Airbus A320",
+        "transport_subtype": {
+          "color": null,
+          "code": null,
+          "title": null
+        },
+        "express_type": null
+      },
+      "is_fuzzy": false,
+      "days": "ежедневно по 31.03",
+      "stops": "",
+      "departure": "2019-02-14T00:35:00+03:00",
+      "terminal": null,
+      "platform": ""
+    },
+    {
+      "except_days": null,
+      "arrival": null,
+      "thread": {
+        "uid": "SU-1852_1_c26_547",
+        "title": "Москва — Баку",
+        "number": "SU 1852",
+        "short_title": "Москва — Баку",
+        "carrier": {
+          "code": 26,
+          "codes": {
+            "icao": "AFL",
+            "sirena": "СУ",
+            "iata": "SU"
+          },
+          "title": "Аэрофлот"
+        },
+        "transport_type": "plane",
+        "vehicle": "Airbus A321",
+        "transport_subtype": {
+          "color": null,
+          "code": null,
+          "title": null
+        },
+        "express_type": null
+      },
+      "is_fuzzy": false,
+      "days": "ежедневно по 31.03, кроме 20.03",
+      "stops": "",
+      "departure": "2019-02-14T00:40:00+03:00",
+      "terminal": null,
+      "platform": ""
+    },
+    {
+      "except_days": null,
+      "arrival": null,
+      "thread": {
+        "uid": "JU-7066_1_c737_12",
+        "title": "Москва — Екатеринбург",
+        "number": "JU 7066",
+        "short_title": "Москва — Екатеринбург",
+        "carrier": {
+          "code": 737,
+          "codes": {
+            "icao": "JAT",
+            "sirena": null,
+            "iata": "JU"
+          },
+          "title": "Air Serbia"
+        },
+        "transport_type": "plane",
+        "vehicle": "Boeing 737",
+        "transport_subtype": {
+          "color": null,
+          "code": null,
+          "title": null
+        },
+        "express_type": null
+      },
+      "is_fuzzy": false,
+      "days": "ежедневно по 27.02",
+      "stops": "",
+      "departure": "2019-02-14T00:40:00+03:00",
+      "terminal": "B",
+      "platform": ""
+    }
+  ],
+  "station": {
+    "code": "s9600213",
+    "title": "Шереметьево",
+    "station_type": "airport",
+    "popular_title": "",
+    "short_title": "",
+    "transport_type": "plane",
+    "station_type_name": "аэропорт",
+    "type": "station"
+  },
+  "date": "2019-02-14",
+  "interval_schedule": [],
+  "event": "departure"
+}
