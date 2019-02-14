@@ -1,0 +1,9 @@
+$linkText: red;
+.copy {
+  &__text {
+    &_color {
+      color: $linkText;
+      font-size: 1.2rem;
+    }
+  }
+}

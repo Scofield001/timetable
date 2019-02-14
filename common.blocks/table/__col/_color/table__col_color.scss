@@ -1,0 +1,9 @@
+$lastColText: #ff0802;
+
+.table {
+  &__col {
+    &_color {
+      color: $lastColText;
+    }
+  }
+}
