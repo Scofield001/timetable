@@ -313,6 +313,10 @@ template {
 .container {
   margin: 0 auto; }
 
+.content {
+  padding: 0 2vw;
+  margin-bottom: 100px; }
+
 .footer {
   border-top: 1px solid black;
   background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(100%, #091979), to(#00d4ff));
@@ -324,22 +328,22 @@ template {
   bottom: 0;
   width: 100%; }
 
-.content {
-  padding: 0 2vw;
-  margin-bottom: 100px; }
-
 .table {
   width: 100%;
   border-collapse: collapse; }
+
+.copy__text {
+  line-height: 50px;
+  color: #fff; }
 
 .copy__link {
   text-decoration: none; }
   .copy__link:visited {
     color: #fff; }
 
-.copy__text {
-  line-height: 50px;
-  color: #fff; }
+.nav__item {
+  display: inline-block;
+  list-style-type: none; }
 
 .nav__btn {
   background: none;
@@ -353,10 +357,6 @@ template {
   transition: color .2s ease; }
   .nav__btn:hover {
     color: #ffbe38; }
-
-.nav__item {
-  display: inline-block;
-  list-style-type: none; }
 
 .table__col {
   border-bottom: 1px solid #000;
