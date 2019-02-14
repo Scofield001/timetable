@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Расписание авиарейсов</title>
+    <link rel="stylesheet" href="style/style.min.css">
+    <script src="lib/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <button class="nav__btn nav__btn_departure nav__btn_color">Вылет</button>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__btn nav__btn_arrival">Прилет</button>
+                </li>
+                <li class="nav__item">
+                    <button class="nav__btn nav__btn_delayed">Задержаны</button>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <table class="table">
+                <caption class="table__cap"></caption>
+                <tr class='table__filter'>
+                    <td class="table__col" colspan="10">
+                        <label class="table__name">
+                            <input class="table__input" type="text" placeholder="Поиск по номеру рейса"/>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer class="footer">
+                <span class="copy__text">
+                    &copy;Источник предоставленных данных —
+                    <a href="https://tech.yandex.ru/rasp/" class="copy__link">
+                        <span class="copy__text copy__text_color">Яндекс</span>.Расписание.
+                    </a>
+                </span>
+        </footer>
+    </div>
+    <script src="js/getJSON.js"></script> <!-- Здесь вписываем свой ключ -->
+    <script src="js/build.min.js"></script> <!-- render - filter - button -->
+</body>
+</html>
