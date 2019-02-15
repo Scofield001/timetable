@@ -1,36 +1,42 @@
 'use strict';
 
+let departure = $('.nav__btn_departure'),
+    arrival = $('.nav__btn_arrival'),
+    delay = $('.nav__btn_delayed'),
+    btnColor = 'nav__btn_color';
+
+/**
+ * Очищает таблицу
+ * @returns {void | * | jQuery}
+ */
+function clearTable() {
+    return $('.table__row').detach();
+}
+
 //Вылет
-$('.nav__btn_departure').on('click', function (){
-    $('.nav__btn_departure').addClass('nav__btn_color');
-
-    $('.nav__btn_arrival').removeClass('nav__btn_color');
-    $('.nav__btn_delayed').removeClass('nav__btn_color');
-
-    $('.table__row').detach();
+departure.on('click', function (){
+    departure.addClass(btnColor);
+    arrival.removeClass(btnColor);
+    delay.removeClass(btnColor);
+    clearTable();
     getJSON(request.event.dep);
 });
 
 //Прилет
-$('.nav__btn_arrival').on('click', function (){
-    $('.nav__btn_arrival').addClass('nav__btn_color');
-
-    $('.nav__btn_departure').removeClass('nav__btn_color');
-    $('.nav__btn_delayed').removeClass('nav__btn_color');
-
-    $('.table__row').detach();
+arrival.on('click', function (){
+    arrival.addClass(btnColor);
+    departure.removeClass(btnColor);
+    delay.removeClass(btnColor);
+    clearTable();
     getJSON(request.event.arr);
-
 });
 
 //Задержанные рейсы
-$('.nav__btn_delayed').on('click', function (){
-    $('.nav__btn_delayed').addClass('nav__btn_color');
-
-    $('.nav__btn_departure').removeClass('nav__btn_color');
-    $('.nav__btn_arrival').removeClass('nav__btn_color');
-
-    $('.table__row').detach();
+delay.on('click', function (){
+    delay.addClass('nav__btn_color');
+    departure.removeClass('nav__btn_color');
+    arrival.removeClass('nav__btn_color');
+    clearTable();
     getJSONDelay(request.event.dep);
     getJSONDelay(request.event.arr);
 });
