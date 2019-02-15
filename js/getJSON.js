@@ -8,7 +8,6 @@ let date = new Date(),
 
 //Собираем ключевые значения для отправки запроса
     request = {
-        key: '95a7fe56-a473-46cf-91a6-1d2f64244e7b',
         station: 's9600213', // Шереметево
         date: today,
         transportType: 'plane',
@@ -45,7 +44,7 @@ function getJSON(event) {
     $.ajax({
         //TODO: Не пускает
 
-        /* url: getUrl('95a7fe56-a473-46cf-91a6-1d2f64244e7b', request.event.dep),*/
+         // url: getUrl('ваш ключ', request.event.dep),
         url: 'responses/' + event + '.json',
         dataType: 'json',
         cache: false,
@@ -67,7 +66,7 @@ function getJSON(event) {
  */
 function getJSONDelay(event) {
     $.ajax({
-        // url: getUrl('95a7fe56-a473-46cf-91a6-1d2f64244e7b', request.event.dep),
+        // url: getUrl('ваш ключ', request.event.dep),
         url: 'responses/' + event + '.json',
         dataType: 'json',
         cache: false,
