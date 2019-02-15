@@ -11,7 +11,7 @@ const gulp = require( 'gulp' ),
     paths = {
         sass: [
             'lib/style/*',
-            'common.blocks/**/*.scss',
+            'blocks/**/*.scss',
         ],
         js: [
             'js/render.js',
