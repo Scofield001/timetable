@@ -13,29 +13,35 @@ function clearTable() {
     return $('.table__row').detach();
 }
 
+/**
+ * Добавляет класс нажатой кнопке
+ * @param btn {jQuery} нажатая кнопка
+ * @param unClick1 {jQuery} другая кнопка
+ * @param unClick2 {jQuery} другая кнопка
+ */
+function btnClick(btn, unClick1, unClick2) {
+    btn.addClass(clicked);
+    unClick1.removeClass(clicked);
+    unClick2.removeClass(clicked);
+}
+
 //Вылет
 departure.on('click', function (){
-    departure.addClass(clicked);
-    arrival.removeClass(clicked);
-    delay.removeClass(clicked);
+    btnClick(departure, arrival, delay);
     clearTable();
     getJSON(request.event.dep);
 });
 
 //Прилет
 arrival.on('click', function (){
-    arrival.addClass(clicked);
-    departure.removeClass(clicked);
-    delay.removeClass(clicked);
+    btnClick(arrival, departure, delay);
     clearTable();
     getJSON(request.event.arr);
 });
 
 //Задержанные рейсы
 delay.on('click', function (){
-    delay.addClass(clicked);
-    departure.removeClass(clicked);
-    arrival.removeClass(clicked);
+    btnClick(delay, departure, arrival);
     clearTable();
     getJSONDelay(request.event.dep);
     getJSONDelay(request.event.arr);
