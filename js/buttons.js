@@ -3,7 +3,7 @@
 let departure = $('.nav__btn_departure'),
     arrival = $('.nav__btn_arrival'),
     delay = $('.nav__btn_delayed'),
-    btnColor = 'nav__btn_color';
+    clicked = 'nav__btn_color';
 
 /**
  * Очищает таблицу
@@ -15,27 +15,27 @@ function clearTable() {
 
 //Вылет
 departure.on('click', function (){
-    departure.addClass(btnColor);
-    arrival.removeClass(btnColor);
-    delay.removeClass(btnColor);
+    departure.addClass(clicked);
+    arrival.removeClass(clicked);
+    delay.removeClass(clicked);
     clearTable();
     getJSON(request.event.dep);
 });
 
 //Прилет
 arrival.on('click', function (){
-    arrival.addClass(btnColor);
-    departure.removeClass(btnColor);
-    delay.removeClass(btnColor);
+    arrival.addClass(clicked);
+    departure.removeClass(clicked);
+    delay.removeClass(clicked);
     clearTable();
     getJSON(request.event.arr);
 });
 
 //Задержанные рейсы
 delay.on('click', function (){
-    delay.addClass('nav__btn_color');
-    departure.removeClass('nav__btn_color');
-    arrival.removeClass('nav__btn_color');
+    delay.addClass(clicked);
+    departure.removeClass(clicked);
+    arrival.removeClass(clicked);
     clearTable();
     getJSONDelay(request.event.dep);
     getJSONDelay(request.event.arr);
