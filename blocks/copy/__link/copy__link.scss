@@ -1,0 +1,12 @@
+$copyVisitedText: #fff;
+$copyLink: #fff;
+
+.copy {
+  &__link {
+    text-decoration: none;
+    color: $copyLink;
+    &:visited {
+      color: $copyVisitedText;
+    }
+  }
+}

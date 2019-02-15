@@ -1,0 +1,16 @@
+$btnHoverText: #ffbe38;
+
+.nav {
+  &__btn {
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: calc(32 * 1px + (90 - 32) * (100vw - 320 * 1px) / (2880 - 320));
+    cursor: pointer;
+    transition: color .2s ease;
+    &:hover {
+      color: $btnHoverText;
+    }
+  }
+}
