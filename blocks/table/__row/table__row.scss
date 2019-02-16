@@ -4,10 +4,6 @@ $colText: #ffac02;
 .table {
   &__row {
     transition: box-shadow .3s, transform .3s;
-
-    .table__col:nth-child(3) {
-      font-size: 2rem;
-    }
     &:hover{
       box-shadow:
               1px 1px $rowShadow,
