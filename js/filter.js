@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Фильтрует табло по запросу
+ * Фильтрует табло по рейсам
  * @param $table {array} Таблица
  */
 function filterTable($table) {
