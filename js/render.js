@@ -11,11 +11,16 @@ function render(schedule) {
     //Строки
     for (let i in schedule) {
         // if (!schedule[i].is_fuzzy) continue;
-        renderTable(schedule, i);
+        renderRow(schedule, i);
     }
 }
 
-function renderTable(schedule, i) {
+/**
+ * Создает строки
+ * @param schedule {array} принимает список рейсов из render()
+ * @param i {int} принимает итерацию из render()
+ */
+function renderRow(schedule, i) {
     let tr = $('<tr>', {class: 'table__row'}),
         info = {
             flightNum: schedule[i].thread.number,       //Номер рейса
@@ -71,11 +76,9 @@ function renderTable(schedule, i) {
  * @param schedule {array} принимает список рейсов
  */
 function renderDelay(schedule) {
-
-    //Строки
     for (let i in schedule) {
         if (!schedule[i].is_fuzzy) continue;
-        renderTable(schedule, i);
+        renderRow(schedule, i);
     }
 }
 
