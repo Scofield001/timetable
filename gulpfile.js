@@ -13,7 +13,8 @@ const gulp = require( 'gulp' ),
 
     paths = {
         sass: [
-            'lib/style/*',
+            'lib/**/*.css',
+            'lib/**/*.scss',
             'blocks/**/*.scss',
         ],
         js: [
