@@ -383,8 +383,6 @@ body {
   -o-transition: box-shadow .3s, transform .3s;
   transition: box-shadow .3s, transform .3s;
   transition: box-shadow .3s, transform .3s, -webkit-box-shadow .3s, -webkit-transform .3s; }
-  .table__row .table__col:nth-child(3) {
-    font-size: 2rem; }
   .table__row:hover {
     -webkit-box-shadow: 1px 1px #ffac02, 2px 2px #ffac02, 3px 3px #ffac02, 4px 4px #ffac02, 5px 5px #ffac02, 6px 6px #ffac02, 7px 7px #ffac02;
     box-shadow: 1px 1px #ffac02, 2px 2px #ffac02, 3px 3px #ffac02, 4px 4px #ffac02, 5px 5px #ffac02, 6px 6px #ffac02, 7px 7px #ffac02;
@@ -402,6 +400,9 @@ body {
 
 .table__col_color {
   color: #ff0802; }
+
+.table__col_font {
+  font-size: 2rem; }
 
 .table__row_display {
   display: none; }
