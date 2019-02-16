@@ -9,7 +9,6 @@ let table = $('.table');
 function render(schedule) {
     //Строки
     for (let i in schedule) {
-        // if (!schedule[i].is_fuzzy) continue;
         renderRow(schedule, i);
     }
 }
