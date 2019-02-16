@@ -6,7 +6,10 @@ const gulp = require( 'gulp' ),
     htmlMin = require('gulp-htmlmin'),
     rename = require('gulp-rename'),
     sass = require( 'gulp-sass' ),
+    tinify = require('gulp-tinify'),
     uglify = require('gulp-uglify'),
+
+    KEY_FOR_TINIFY = '',
 
     paths = {
         sass: [
@@ -58,6 +61,11 @@ gulp.task('html', function () {
     gulp.src('*.html')
         .pipe(htmlMin({removeComments: true, collapseWhitespace: true}))
         .pipe(gulp.dest('dist/'));
+});
+gulp.task('tinify', function() {
+    gulp.src('img/**/*')
+        .pipe(tinify(KEY_FOR_TINIFY))
+        .pipe(gulp.dest('dist/img/'));
 });
 
 gulp.task('build', function () {
