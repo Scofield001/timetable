@@ -52,7 +52,7 @@ function render(schedule) {
 }
 
 /**
- * Показывает отложенные рейсы
+ * Выводит только задержанные рейсы
  * @param schedule {array} принимает список рейсов
  */
 function renderDelay(schedule) {
