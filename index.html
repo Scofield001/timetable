@@ -28,19 +28,24 @@
 </head>
 <body>
     <div class="container">
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <button class="nav__btn nav__btn_departure nav__btn_color">Вылет</button>
-                </li>
-                <li class="nav__item">
-                    <button class="nav__btn nav__btn_arrival">Прилет</button>
-                </li>
-                <li class="nav__item">
-                    <button class="nav__btn nav__btn_delayed">Задержаны</button>
-                </li>
-            </ul>
-        </nav>
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <button class="nav__btn nav__btn_departure nav__btn_color">Вылет</button>
+                    </li>
+                    <li class="nav__item">
+                        <button class="nav__btn nav__btn_arrival">Прилет</button>
+                    </li>
+                    <li class="nav__item">
+                        <button class="nav__btn nav__btn_delayed">Задержаны</button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copy">
+                <iframe frameborder="0" style="overflow: hidden; border: 0; width: 240px; height: 130px;" src="//yandex.st/rasp/media/apicc/copyright_vert_yellow.html"></iframe>
+            </div>
+        </header>
         <div class="content">
             <table class="table">
                 <tr class='table__filter'>
@@ -52,14 +57,6 @@
                 </tr>
             </table>
         </div>
-        <footer class="footer">
-                <span class="copy__text">
-                    &copy; Данные предоставлены сервисом
-                    <a href="https://rasp.yandex.ru/" class="copy__link">
-                        <span class="copy__text copy__text_color">Яндекс</span>.Расписания.
-                    </a>
-                </span>
-        </footer>
     </div>
     <script src="js/getJSON.js"></script> <!-- Здесь вписываем свой ключ -->
     <script src="js/build.min.js"></script> <!-- render - filter - button -->
