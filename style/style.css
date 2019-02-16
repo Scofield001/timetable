@@ -310,16 +310,6 @@ template {
 body {
   font-family: 'Roboto Condensed', Arial,  sans-serif; }
 
-.copy__link {
-  text-decoration: none;
-  color: #fff; }
-  .copy__link:visited {
-    color: #fff; }
-
-.copy__text {
-  line-height: 50px;
-  color: #fff; }
-
 .nav__btn {
   background: none;
   border: none;
@@ -336,6 +326,9 @@ body {
 .nav__item {
   display: inline-block;
   list-style-type: none; }
+
+.nav__list {
+  padding: 0; }
 
 .table__col {
   border-bottom: 1px solid #000;
@@ -404,10 +397,6 @@ body {
       transition: color .3s;
       color: #ffac02; }
 
-.copy__text_color {
-  color: red;
-  font-size: 1.2rem; }
-
 .nav__btn_color {
   color: #ffac02; }
 
@@ -420,20 +409,20 @@ body {
 .container {
   margin: 0 auto; }
 
+.header {
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 .content {
   padding: 0 2vw;
-  margin-bottom: 100px; }
-
-.footer {
-  border-top: 1px solid black;
-  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(100%, #091979), to(#00d4ff));
-  background: -webkit-linear-gradient(left, #020024 0%, #091979 100%, #00d4ff 100%);
-  background: -o-linear-gradient(left, #020024 0%, #091979 100%, #00d4ff 100%);
-  background: linear-gradient(90deg, #020024 0%, #091979 100%, #00d4ff 100%);
-  padding: 0 1vw;
-  position: fixed;
-  bottom: 0;
-  width: 100%; }
+  margin-bottom: 20px; }
 
 .table {
   width: 100%;
