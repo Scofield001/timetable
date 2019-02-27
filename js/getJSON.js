@@ -32,8 +32,8 @@ function getUrl(key, event) {
 }
 
 //Проверка ссылок
-console.log(getUrl('ключ', request.event.dep, ));
-console.log(getUrl('ключ', request.event.arr, ));
+// console.log(getUrl('ключ', request.event.dep));
+// console.log(getUrl('ключ', request.event.arr));
 
 /**
  * Отправляет запрос
@@ -42,18 +42,13 @@ console.log(getUrl('ключ', request.event.arr, ));
  */
 function getJSON(event) {
     $.ajax({
-        //TODO: Не пускает
-
-         // url: getUrl('ваш ключ', request.event.dep),
+        //Не пускает
+        // url: getUrl('ваш ключ', request.event.dep),
         url: 'responses/' + event + '.json',
         dataType: 'json',
         cache: false,
         method: 'get',
-        error: function(){
-            console.error('ошибка');
-        },
         success: function(data){
-            console.log('Получено ' + event);
             render(data.schedule);
         }
     });
@@ -71,11 +66,7 @@ function getJSONDelay(event) {
         dataType: 'json',
         cache: false,
         method: 'get',
-        error: function(){
-            console.error('ошибка');
-        },
         success: function(data){
-            console.log('Получено ' + event);
             renderDelay(data.schedule);
         }
     });
