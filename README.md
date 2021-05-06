@@ -4,4 +4,4 @@
 + Реализован поиск по номеру борта среди отображаемых рейсов.
 + Иcпользовалась библиотека *jQuery*
 
-**[Страница приложения](https://aabekk.github.io/timetable/dist/)**
+**[Страница приложения](https://ahwest.github.io/timetable/dist/)**
